@@ -20,7 +20,7 @@ def main():
     #      https://github.com/mikepound/tls-exercises/blob/master/python/README.md
 
     # Create a standard TCP Socket
-    sock = None
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
     # Create SSL context which holds the parameters for any sessions
     context = None
