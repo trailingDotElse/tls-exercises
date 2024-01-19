@@ -23,7 +23,7 @@ def main():
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
     # Create SSL context which holds the parameters for any sessions
-    context = ssl.create_default_context()
+    context = ssl.create_default_context(ssl.Purpose.SERVER_AUTH)
 
     # We can wrap in an SSL context first, then connect
     conn = None
